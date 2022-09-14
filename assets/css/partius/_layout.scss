@@ -1,0 +1,129 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+
+  &__introduction {
+    background-color: #fff;
+    padding: 2.5rem;
+    text-align: right;
+    position: relative;
+    display: grid;
+    gap: 1.25rem;
+    align-content: center;
+    justify-items: end;
+
+    &__introduction h1 {
+      font-size: 2.3rem;
+    }
+
+    &__introduction img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr;
+
+    &__introduction img {
+      object-fit: cover;
+    }
+
+    &__introduction h1 {
+      white-space: nowrap;
+    }
+
+    &__introduction {
+      text-align: left;
+    }
+  }
+
+  .introduction-cover {
+    object-fit: cover;
+  }
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .title::after {
+    display: none;
+  }
+}
+
+.benefits h2 {
+  font-size: 4rem;
+  background-image: url(/assets/svg/onda.svg);
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 2.5rem;
+  align-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .benefits h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 400px) {
+    .benefits h2 {
+      font-size: 2rem;
+    }
+
+    .benefits p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.benefits {
+  &__list {
+    background-color: $white-background;
+    padding: 2.5rem;
+
+    &--itens {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10x 1.25rem;
+      padding: 1.25rem;
+    }
+    &--itens p {
+      grid-column: 2;
+    }
+
+    &--itens:hover {
+      border-left: 0.25rem solid #e21;
+    }
+
+    &--itens:nth-child(odd) {
+      background-color: $white-background;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .benefits-and-advantages {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.rodape {
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}

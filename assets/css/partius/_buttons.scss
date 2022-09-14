@@ -1,0 +1,11 @@
+.button {
+  background-color: $red-light;
+  color: $white-light;
+  padding: 1rem 1.875rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: $red-dark;
+}
