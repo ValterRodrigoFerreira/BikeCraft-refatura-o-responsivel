@@ -4,7 +4,7 @@
   max-width: 1000px;
 
   &__introduction {
-    background-color: #fff;
+    background-color: var(--fundo-2);
     padding: 2.5rem;
     text-align: right;
     position: relative;
@@ -12,6 +12,7 @@
     gap: 1.25rem;
     align-content: center;
     justify-items: end;
+    color: var(--texto);
 
     &__introduction h1 {
       font-size: 2.3rem;
@@ -50,7 +51,7 @@
   content: "";
   width: 60px;
   height: 4px;
-  background-color: #e21;
+  background-color: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
@@ -64,9 +65,9 @@
 
 .benefits h2 {
   font-size: 4rem;
-  background-image: url(/assets/svg/onda.svg);
+  background-image: var(--onda);
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   text-align: right;
   padding: 2.5rem;
   align-self: center;
@@ -91,7 +92,7 @@
 
 .benefits {
   &__list {
-    background-color: $white-background;
+    background-color: var(--fundo-2);
     padding: 2.5rem;
 
     &--itens {
@@ -105,11 +106,11 @@
     }
 
     &--itens:hover {
-      border-left: 0.25rem solid #e21;
+      border-left: 0.25rem solid var(--cor-primaria);
     }
 
     &--itens:nth-child(odd) {
-      background-color: $white-background;
+      background-color: var(--fundo-1);
     }
   }
 
@@ -121,7 +122,7 @@
 }
 
 .rodape {
-  background-color: #ffffff;
+  background-color: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 2.5rem;

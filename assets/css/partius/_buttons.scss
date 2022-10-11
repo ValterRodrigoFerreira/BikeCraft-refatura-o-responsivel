@@ -1,11 +1,11 @@
 .button {
-  background-color: $red-light;
-  color: $white-light;
+  background-color: var(--cor-primaria);
+  color: var(--fundo-2);
   padding: 1rem 1.875rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: $red-dark;
+  background-color: var(--cor-primaria-escura);
 }
